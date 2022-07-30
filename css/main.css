@@ -192,7 +192,7 @@ transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0 auto;
     width: 696px;
     }
-.overlay {
+.teamwork {
     outline: 1px solid #C4C4C4;
     background-color: #2F303A;
     background-image: url("../images/Img-bg.jpg");
@@ -203,7 +203,7 @@ transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 -webkit-box-shadow: -200px -93px 74px 200px rgba(47,48,58,0.42) inset;
 -moz-box-shadow: -200px -93px 74px 200px rgba(47,48,58,0.42) inset;
 }
-.teamwork {
+.overlay {
     width: 100%;
     padding: 200px 0px;
 }
@@ -216,7 +216,6 @@ transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
     text-transform: uppercase;
     text-decoration:none;
     color: #212121;
-    padding-top: 30px;
     margin-bottom: 10px;
 }
 .features-description {
@@ -234,6 +233,7 @@ transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     width: 270px;
     height: 120px;
+    margin-bottom: 30px;
     background-color: #F5F4FA;
 }
 .features-bg:focus {
@@ -264,7 +264,7 @@ transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 16px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .agitation-panel {
     padding-top: 40px;
@@ -335,7 +335,7 @@ transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-list {
     display:flex;
-    padding-bottom: 94px;
+    margin-bottom: 94px;
     cursor: pointer;
     justify-content: center;
 }

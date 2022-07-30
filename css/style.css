@@ -77,6 +77,8 @@ body {
     font-size: 14px;
     line-height: 1;
     letter-spacing: 0.02em;
+    display: flex;
+    padding-top: 7px;
     color: #757575;}
 .menu:hover {color: #2196F3;
     transition-duration: 250ms;
@@ -111,6 +113,7 @@ body {
     height: 12px;
     cursor: pointer;
     margin-right: 10px;
+    margin-top: 1px;
     fill: #757575;
 }
 .btn-icon:hover {
@@ -129,6 +132,7 @@ body {
     height: 16px;
     cursor: pointer;
     margin-right: 10px;
+    margin-top: -1px;
     fill: #757575;
 }
 .btn-icon-2:hover {
@@ -149,8 +153,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 35px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 69px;
 }
 .work-examples {
     margin-left: 30px;
@@ -176,6 +180,12 @@ body {
     background-color: #F5F4FA;
     padding: 6px 22px;
     border-radius: 4px;}
+.list:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.list:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .examples {
     font-family:'Roboto';
     font-weight: 700;
