@@ -14,12 +14,15 @@
 <body>
     <header class="header">
         <div class="container header-container">
+            <a class="het-logo logo" href="./index.html">Web<span class="accent">Studio</span></a>
             <nav class="nav">
             <ul class="het">
-            <li><a class="het-logo logo" href="./index.html">Web<span class="accent">Studio</span></a></li>
-            <li><a class="het-nav button" href="./index.html">Студия</a></li>
-            <li><a class="het-nav menu" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="het-nav menu" href="">Контакты</a></li>
+            <li><a class="het-nav is-active-current" href="./index.html">Студия</a>
+            </li>
+            <li><a class="het-nav menu is-active" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li><a class="het-nav menu is-active" href="">Контакты</a>
+            </li>
         </ul>
         </nav>
          
@@ -52,7 +55,7 @@
         <section class="teamwork">
         <h1 class="hero_title">Эффективные решения для вашего бизнеса</h1>
         <div class="button_bg">
-        <button class="hero_button" type="button">Заказать услугу</button>
+        <button class="hero_button" type="button" data-modal-open>Заказать услугу</button>
     </div>
     </section>
 </div>     
@@ -102,7 +105,7 @@
                     </svg>
                 </div>
                 <h2 class="features-title">Современные технологии</h2>
-                <p class="features-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <p class="features-description" data-modal-open>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
     </div>
@@ -115,13 +118,22 @@
 
         <ul class="images-list">
             <li class="images-item">
+                <div class="images-relative">
                 <img class="img-list" src="./images/img7.jpg" width="370" height="294" alt="Клацает по клавиатурке">
+                <h3 class="images-desc">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
+            </div>
             </li>
             <li class="images-item">
+                <div class="images-relative">
                 <img class="img-list" src="./images/img5.jpg" width="370" height="294" alt="Отвечает Альтухам в инсте">
+                <h3 class="images-desc">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+            </div>
             </li>
             <li class="images-item">
+                <div class="images-relative">
                 <img class="img-list" src="./images/img6.jpg" width="370" height="294" alt="Держит планшет с умным ебалом">
+                <h3 class="images-desc">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+            </div>
             </li>
         </ul>
     </div>
@@ -324,57 +336,71 @@
                 </ul>
         </div>
     </section>
-<footer class=" footer">
-    <div class="container">
-        <address class="wrapper-network">
-                  <ul class="wrapper-box">
-                        <li class="wrapper-inc">
-                                    <a class="logo_wrapper" href="./index.html">Web<span class="accent_title">Studio</span></a></li>
-                        <li class="wrapper-botton">
-                                    <a class="wrapper_item" href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858">г. Киев, пр-т Леси Украинки,26</a>
-                        </li>
-                        <li class="wrapper-botton">
-                                    <a class="wrapper" href="mailto:info@example.com">info@example.com</a>
-                        </li>
-                        <li class="wrapper-botton">
-                                    <a class="wrapper" href="tel:+380991111111">+ 38 099 111 11 11</a>
-                        </li>
-                  </ul> 
-                  <div class="agitation-panel">      
-            <h2 class="agitation">ПРИСОЕДИНЯЙТЕСЬ</h2>
-                <ul class="social-panel">
-                    <li class="network-bg">
-                        <svg class="social-network">
-                            <use href="icon/symbol-defs.svg#icon-instagram">
-            
-                            </use>
-                        </svg>
-                    </li>
-                    <li class="network-bg">
-                        <svg class="social-network">
-                            <use href="icon/symbol-defs.svg#icon-twitter">
-            
-                            </use>
-                        </svg>
-                    </li>
-                    <li class="network-bg">
-                        <svg class="social-network">
-                            <use href="icon/symbol-defs.svg#icon-facebook">
-            
-                            </use>
-                        </svg>
-                    </li>
-                    <li class="network-bg">
-                        <svg class="social-network">
-                            <use href="icon/symbol-defs.svg#icon-in">
-            
-                            </use>
-                        </svg>
-                    </li>
-                </ul>
-            </div> 
-    </address> 
-</div>
-</footer>
+    <footer class=" footer">
+        <div class="container container-footer">
+            <address class="wrapper-network">
+                      <ul class="wrapper-box">
+                            <li class="wrapper-inc">
+                                        <a class="logo_wrapper" href="./index.html">Web<span class="accent_title">Studio</span></a></li>
+                            <li class="wrapper-botton">
+                                        <a class="wrapper_item" href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858">г. Киев, пр-т Леси Украинки,26</a>
+                            </li>
+                            <li class="wrapper-botton">
+                                        <a class="wrapper" href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="wrapper-botton">
+                                        <a class="wrapper" href="tel:+380991111111">+ 38 099 111 11 11</a>
+                            </li>
+                      </ul> 
+        </address> 
+    <div class="agitation-panel">      
+        <h2 class="agitation">ПРИСОЕДИНЯЙТЕСЬ</h2>
+            <ul class="social-panel">
+                <li class="network-bg">
+                    <svg class="social-network">
+                        <use href="icon/symbol-defs.svg#icon-instagram">
+        
+                        </use>
+                    </svg>
+                </li>
+                <li class="network-bg">
+                    <svg class="social-network">
+                        <use href="icon/symbol-defs.svg#icon-twitter">
+        
+                        </use>
+                    </svg>
+                </li>
+                <li class="network-bg">
+                    <svg class="social-network">
+                        <use href="icon/symbol-defs.svg#icon-facebook">
+        
+                        </use>
+                    </svg>
+                </li>
+                <li class="network-bg">
+                    <svg class="social-network">
+                        <use href="icon/symbol-defs.svg#icon-in">
+        
+                        </use>
+                    </svg>
+                </li>
+            </ul>
+        </div> 
+    </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="button-modal-position">
+             <svg class="button-modal" data-modal-close>
+                 
+                 <use class="close-modal" href="icon/symbol-defs.svg#icon-close" >
+         
+                 </use>
+             
+             </svg>
+          </button>
+        </div>
+ </div>
+ <script src="./js/modal.js"></script>
 </body>
 </html>
